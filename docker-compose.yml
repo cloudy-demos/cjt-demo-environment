@@ -1,7 +1,7 @@
 version: '3'
 services:
-  #CloudBees Jenkins Team
-  #https://hub.docker.com/r/cloudbees/cloudbees-jenkins-team/
+  #CloudBees Jenkins Distribution
+  #https://hub.docker.com/r/cloudbees/cloudbees-jenkins-distribution
   cjt:
     container_name: cjt
     build: ./cjt

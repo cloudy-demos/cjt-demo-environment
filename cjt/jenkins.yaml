@@ -18,9 +18,13 @@ jenkins:
     enabled: true
   slaveAgentPort: 50000
 security:
-  remotingCLI:
-    enabled: false
-  sshd:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  downloadSettings:
+    useBrowser: false
+  sSHD:
     port: 2222
 unclassified:
   location:
