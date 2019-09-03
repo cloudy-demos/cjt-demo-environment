@@ -19,7 +19,7 @@ services:
     ports:
       - "9090:8080" #host:container
     volumes:
-      - ./cjt/data:/var/jenkins_home #persist all the data
+      - ./cjt/data:/var/cloudbees-jenkins-distribution #persist jenkins_home on host machine
       - /var/run/docker.sock:/var/run/docker.sock #Docker on Docker
       - ${USER_M2}:/root/.m2 #requires .env file
 
